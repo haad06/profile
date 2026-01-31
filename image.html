@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haad | Image Gallery</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f8fbff;
+      color: #0f172a;
+    }
+
+    /* ===== Top Bar (SAME AS HOME) ===== */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid #38bdf8;
+      object-fit: cover;
+    }
+
+    .brand h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #0284c7;
+      font-weight: 600;
+    }
+
+    .brand span {
+      display: block;
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      color: #0f172a;
+    }
+
+    nav a:hover {
+      color: #0284c7;
+    }
+
+    /* ===== Main ===== */
+    main {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+
+    main h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: #0284c7;
+    }
+
+    main p {
+      color: #475569;
+      margin-bottom: 40px;
+    }
+
+    /* ===== Image Grid ===== */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+    }
+
+    .image-card {
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .image-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .image-info {
+      padding: 16px 18px;
+    }
+
+    .image-info h3 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .image-info span {
+      font-size: 13px;
+      color: #0284c7;
+      font-weight: 600;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 80px;
+      font-size: 14px;
+      color: #64748b;
+      border-top: 1px solid #e5e7eb;
+      background: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <img src="logo.png" alt="Haad Logo" />
+    <div>
+      <h1>Haad</h1>
+      <span>Student • Learner • Creator</span>
+    </div>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="future.html">Future</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Image Gallery</h2>
+  <p>
+    This is my gallery
+    
+  </p>
+
+  <div class="gallery">
+
+    <!-- IMAGE 1 -->
+    <div class="image-card">
+      <img src="1768134613134.jpg" alt="Pixel Tree">
+      <div class="image-info">
+        <h5> This is a 32×32 grid pixel art tree creted by gemini</h5>
+      </div>
+    </div>
+
+    <!-- IMAGE 2 -->
+ 
+ <div class="image-card">
+      <img src="1768134756300.jpg" alt="Pixel Tree">
+      <div class="image-info">
+        <h5> Beautiful view of window creted by gemini</h5>
+      </div>
+    </div>
+    
+  <div class="image-card">
+      <img src="M1.jpg" alt="Pixel Tree">
+      <div class="image-info">
+        <h5>Little home in Minecraft</h5>
+      </div>
+    </div>
+    
+      <div class="image-card">
+      <img src="Fantisyart.png" alt="Pixel Tree">
+      <div class="image-info">
+        <h5>Light fantisy in pixel art created by gemini</h5>
+      </div>
+    </div>
+    <!-- COPY-PASTE THIS BLOCK TO ADD MORE IMAGES -->
+    <!--
+    <div class="image-card">
+      <img src="image/yourimage.png" alt="Your Image">
+      <div class="image-info">
+        <h3>Your Title</h3>
+        <span>PNG Image</span>
+      </div>
+    </div>
+    -->
+
+  </div>
+</main>
+
+<footer>
+  © 2026 Haad • All rights reserved
+</footer>
+
+</body>
+</html>
